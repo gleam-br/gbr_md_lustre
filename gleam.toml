@@ -1,10 +1,10 @@
-name = "gbr_md_lustre"
+name = "gbr_md"
 version = "1.0.0"
 target = "javascript"
 
 description = "Ⓜ️ Gleam library convert markdown to lustre elements"
 licences = ["Apache-2.0"]
-repository = { type = "github", user = "gleam-br", repo = "gbr_md_lustre" }
+repository = { type = "github", user = "gleam-br", repo = "gbr_md" }
 links = []
 
 [dependencies]

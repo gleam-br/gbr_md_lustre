@@ -27,10 +27,10 @@
     "lustre"
   ],
   "repository": {
-    "url": "git+https://github.com/gleam-br/gbr_md_lustre.git"
+    "url": "git+https://github.com/gleam-br/gbr_md.git"
   },
   "bugs": {
-    "url": "https://github.com/gleam-br/gbr_md_lustre/issues"
+    "url": "https://github.com/gleam-br/gbr_md/issues"
   },
   "devDependencies": {
     "@types/bun": "^1.3.3",

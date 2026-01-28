@@ -1,5 +1,5 @@
-[![Package Version](https://img.shields.io/hexpm/v/gbr_md_lustre)](https://hex.pm/packages/gbr_md_lustre)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/gbr_md_lustre/)
+[![Package Version](https://img.shields.io/hexpm/v/gbr_md)](https://hex.pm/packages/gbr_md)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/gbr_md/)
 
 #️ Ⓜ️ Gleam library convert markdown to lustre elements
 
@@ -45,7 +45,7 @@ Content **here**!
 ## Run
 
 ```sh
-gleam add gbr_md_lustre@1
+gleam add gbr_md@1
 ```
 
 ```gleam
