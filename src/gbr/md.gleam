@@ -5,6 +5,7 @@
 import gleam/option.{type Option, None, Some}
 
 import lustre/element
+import mork
 
 import gbr/md/lustre/renderer
 import gbr/md/metadata/frontmatter
@@ -80,11 +81,27 @@ fn frontmatter(markdown: String) {
   }
 }
 
-/// Convert markdown content into view with lustre element.
+/// Convert markdown into view with lustre element.
 ///
 /// - in: Markdown type
 ///
 pub fn view(in: Markdown) -> element.Element(a) {
-  // todo how make this better
   renderer.render(in.body)
+  // or
+  //
+  // ```
+  //  mork.parse(in.body)
+  //  |> mork/to_lustre()
+  // ```
+  //
+  // todo need more analisys
+}
+
+/// Convert markdown into html raw content
+///
+/// - in: Markdown type
+///
+pub fn html(in: Markdown) -> String {
+  mork.parse(in.body)
+  |> mork.to_html()
 }
