@@ -1,6 +1,6 @@
 {
   "name": "gbr-md-lustre",
-  "description": "Ⓜ️ Gleam markdown to lustre elements",
+  "description": "Ⓜ️ Gleam library convert markdown to lustre elements",
   "version": "1.0.0",
   "type": "module",
   "license": "Apache-2.0",
