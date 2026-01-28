@@ -49,10 +49,49 @@ gleam add gbr_md_lustre@1
 ```
 
 ```gleam
-import gbr_md_lustre
+import gbr/md
 
 pub fn main() -> Nil {
-  // TODO: An example of the project in use
+  let raw =
+    "---
+title: Programação Deflacionária
+date: 2025-09-15
+slug: programming-deflation
+tags: [ai, economy]
+---
+# Introdução
+O código está ficando mais barato."
+
+  let result =
+    raw
+    |> md.new()
+    |> md.metadata(md.Frontmatter)
+
+  result |> should.be_ok
+  let assert Ok(md.Markdown(metadata:, ..)) = result
+
+  metadata |> should.be_some
+  let assert Some(metadata) = metadata
+
+  let result = {
+    use #(key, _) <- list.find(metadata)
+
+    key == "title"
+  }
+
+  result |> should.be_ok
+  let assert Ok(#(_, value)) = result
+  value |> should.equal("Programação Deflacionária")
+
+  let result = {
+    use #(key, _) <- list.find(metadata)
+
+    key == "slug"
+  }
+
+  result |> should.be_ok
+  let assert Ok(#(_, value)) = result
+  value |> should.equal("programming-deflation")
 }
 ```
 
