@@ -5,6 +5,8 @@
 
 Convert markdown content into lustre elements.
 
+> use library [mork](https://git.liten.app/krig/mork)
+
 This accecpt metadata into markdown, format:
 
 ```md
