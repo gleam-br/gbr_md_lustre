@@ -1,7 +1,7 @@
 [![Package Version](https://img.shields.io/hexpm/v/gbr_md_lustre)](https://hex.pm/packages/gbr_md_lustre)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/gbr_md_lustre/)
 
-#️ Ⓜ️ Gleam markdown to lustre elements
+#️ Ⓜ️ Gleam library convert markdown to lustre elements
 
 Convert markdown content into lustre elements.
 
