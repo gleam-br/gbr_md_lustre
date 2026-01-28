@@ -8,9 +8,9 @@ repository = { type = "github", user = "gleam-br", repo = "gbr_md_lustre" }
 links = []
 
 [dependencies]
-mork = "~> 1.11.1"
-lustre = "~> 5.5.2"
-gleam_stdlib = ">= 0.44.0 and < 2.0.0"
+mork = "~> 1.11"
+lustre = "~> 5.5"
+gleam_stdlib = "~> 0.68"
 
 [dev-dependencies]
-gleeunit = ">= 1.0.0 and < 2.0.0"
+gleeunit = "~> 1.9"
